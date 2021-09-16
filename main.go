@@ -29,7 +29,7 @@ func generateOauthState(w http.ResponseWriter) string {
 }
 func init() {
 	//Replace with your client id .json file
-	b, err := ioutil.ReadFile("client_secret_601894538001-pfl2vfrksh0ut7v98jcni124nfoir209.apps.googleusercontent.com.json")
+	b, err := ioutil.ReadFile("your_path_to_client_id_credential.json")
 	if err != nil {
 		log.Fatalf("Unable to read client secret file: %v", err)
 	}
